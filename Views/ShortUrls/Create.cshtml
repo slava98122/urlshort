@@ -1,0 +1,28 @@
+﻿@model ShortUrl
+@{
+    ViewData["Title"] = "Create a new short URL";
+}
+
+<br />
+
+<div class="jumbotron">
+
+ 
+
+    <br />
+
+    <p>мы создадим для вас короткий URL-адрес!</p>  
+
+    <br />
+
+    <form asp-action="Create">
+        <div class="form-horizontal">
+            <div class="input-group input-group-lg">
+                <input asp-for="OriginalUrl" class="form-control" placeholder="Введите URL адрес" />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Shorten URL</button>
+                </span>
+            </div>
+        </div>
+    </form>
+</div>

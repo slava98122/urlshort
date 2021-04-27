@@ -1,0 +1,29 @@
+﻿@model ShortUrl
+@{
+    ViewData["Title"] = "Details of a short URL";
+}
+
+<br />
+
+<div class="jumbotron">
+
+  
+
+ 
+
+    <ul>
+
+      
+         
+     
+       
+      
+            <span class="col-md-2">
+                <strong>Короткий URL:</strong>
+            </span>
+            <a asp-controller="ShortUrls" asp-action="RedirectTo" asp-route-path="@ViewData["Path"]">
+                http://shtnr/@ViewData["Path"]
+            </a>
+        
+    </ul>
+</div>
